@@ -2,20 +2,39 @@
 
 // src/dashboard/components/Header.jsx
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "../styles/Header.module.css";
+import user_icon from "../images/user-check-solid.svg";
+import bell_icon from "../images/bell-solid.svg";
+import diagram_icon from "../images/diagram-project-solid.svg";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Link to='/' className={styles.logo}>
+      <a href='.' className={styles.logo}>
         Maryland State Roleplay
-      </Link>
-      {/* Navigation links */}
-      {/* ... */}
-      <Link to='/verification' className={styles.cta}>
+      </a>
+      <nav>
+        <ul className={styles.nav__links}>
+          <li>
+            <a href='.'>
+              <img className={styles.icon_diagram} src={diagram_icon} alt='' />
+            </a>
+          </li>
+          <li>
+            <a href='.'>
+              <img className={styles.icon_bell} src={bell_icon} alt='' />
+            </a>
+          </li>
+          <li>
+            <a href='.'>
+              <img className={styles.icon_check} src={user_icon} alt='' />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href='.' className={styles.cta}>
         Contact
-      </Link>
+      </a>
       <p className={`${styles.menu} ${styles.cta}`}>Menu</p>
     </header>
   );

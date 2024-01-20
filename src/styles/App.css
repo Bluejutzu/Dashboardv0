@@ -1,0 +1,38 @@
+:root {
+  /* Primary Palette */
+  --primary: #a73e40;
+  --primary-content: #f8ecec;
+  --primary-dark: #823032;
+  --primary-light: #c15759;
+
+  --secondary: #a7763e;
+  --secondary-content: #f8f2ec;
+  --secondary-dark: #825c30;
+  --secondary-light: #c19057;
+
+  --background: #1e1515;
+  --foreground: #2d2020;
+  --border: #4b3535;
+
+  --copy: #fcfbfb;
+  --copy-light: #dfd2d2;
+  --copy-lighter: #b59697;
+
+  --success: #3ea73e;
+  --warning: #a7a73e;
+  --error: #a73e3e;
+  --success-content: #ecf8ec;
+  --warning-content: #000000;
+  --error-content: #f8ecec;
+
+  /* Extra Colors */
+  --white: #ffffff;
+  --light-grey: #edf0f1;
+  --violet: #655be1;
+  --dark-violet: #5146e1;
+  --black: #21232a;
+}
+
+body {
+    background-color: var(--background);
+}

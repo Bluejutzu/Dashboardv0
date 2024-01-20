@@ -2,7 +2,7 @@
 
 // src/dashboard/pages/Home.jsx
 import React from "react";
-import styles from "../assets/styles/Header.module.css"; // Import the corresponding styles
+import styles from "../styles/Header.module.css"; // Import the corresponding styles
 
 const Home = () => {
   return (

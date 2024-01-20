@@ -1,4 +1,53 @@
-/* src/dashboard/styles/Header.module.css */
+/**
+ * src/dashboard/styles/Header.module.css
+ *
+ * @format
+ */
+
+:root {
+  /* Primary Palette */
+  --primary: #a73e40;
+  --primary-content: #f8ecec;
+  --primary-dark: #823032;
+  --primary-light: #c15759;
+
+  --secondary: #a7763e;
+  --secondary-content: #f8f2ec;
+  --secondary-dark: #825c30;
+  --secondary-light: #c19057;
+
+  --background: #1e1515;
+  --foreground: #2d2020;
+  --border: #4b3535;
+
+  --copy: #fcfbfb;
+  --copy-light: #dfd2d2;
+  --copy-lighter: #b59697;
+
+  --success: #3ea73e;
+  --warning: #a7a73e;
+  --error: #a73e3e;
+  --success-content: #ecf8ec;
+  --warning-content: #000000;
+  --error-content: #f8ecec;
+
+  /* Extra Colors */
+  --white: #ffffff;
+  --light-grey: #edf0f1;
+  --violet: #655be1;
+  --dark-violet: #5146e1;
+  --black: #21232a;
+}
+
+img {
+  padding: 2rem;
+  margin: -2rem;
+  margin-bottom: -2rem;
+  padding-bottom: 2rem;
+  margin-top: -2rem;
+  padding-top: 2rem;
+}
+
 .header {
   display: flex;
   justify-content: flex-end;
@@ -13,7 +62,7 @@
   margin-right: auto;
   text-decoration: none;
   color: var(--primary-content);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
 }
@@ -26,7 +75,7 @@
 .nav__links a,
 .cta,
 .overlay__content a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
   color: var(--primary-content);
@@ -39,23 +88,27 @@
   background: var(--primary-light);
   border-radius: 5px;
   box-shadow: var(--copy-light);
+  transition: ease-out 1s;
 }
 
 .nav__links li:hover {
-  transition: ease-out, transform 1s ;
+  transition: ease-out, transform 1s;
   background: var(--primary-dark);
+  transition: cubic-bezier(0.075, 1, 0.165, 1)
 }
 
 .nav__links li a {
-  transition: all 0.3s ease 0s;
+  transition: ease-in-out 2s;
 }
 
+.icon_diagram,
 .icon_bell,
 .icon_check {
   position: relative;
   display: inline-block;
 }
 
+.icon_diagram,
 .icon_bell,
 .icon_check {
   top: 3px;
@@ -63,26 +116,10 @@
   display: inline-block;
 }
 
-.icon_bell .content_bell,
-.icon_check .content_check {
-  position: absolute;
-  top: 20px; /* Adjust this value to control the initial position */
-  left: 50%;
-  transform: translateX(-50%) translateY(-150%);
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.nav__links li:hover .content_bell,
-.nav__links li:hover .content_check {
-  opacity: 1;
-  transform: translateX(-50%) translateY(30%);
-}
-
 .cta {
   margin-left: 20px;
   padding: 9px 25px;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   box-shadow: var(--border);
   border-radius: 50px;
   cursor: pointer;
@@ -90,7 +127,8 @@
 }
 
 .cta:hover {
-  background-color: var(--primary-light);
+  transition: cubic-bezier(0.075, 1, 0.165, 1);
+  background-color: var(--secondary-dark);
 }
 
 /* Mobile Nav */
