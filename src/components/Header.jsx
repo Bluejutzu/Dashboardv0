@@ -16,23 +16,23 @@ const Header = () => {
       <nav>
         <ul className={styles.nav__links}>
           <li>
-            <a href='.'>
+            <a href='/projects'>
               <img className={styles.icon_diagram} src={diagram_icon} alt='' />
             </a>
           </li>
           <li>
-            <a href='.'>
+            <a href='/news'>
               <img className={styles.icon_bell} src={bell_icon} alt='' />
             </a>
           </li>
           <li>
-            <a href='.'>
+            <a href='./verification'>
               <img className={styles.icon_check} src={user_icon} alt='' />
             </a>
           </li>
         </ul>
       </nav>
-      <a href='.' className={styles.cta}>
+      <a href='/contact' className={styles.cta}>
         Contact
       </a>
       <p className={`${styles.menu} ${styles.cta}`}>Menu</p>

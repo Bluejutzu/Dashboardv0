@@ -40,12 +40,9 @@
 }
 
 img {
-  padding: 2rem;
-  margin: -2rem;
-  margin-bottom: -2rem;
-  padding-bottom: 2rem;
-  margin-top: -2rem;
-  padding-top: 2rem;
+
+  padding: 0px 1rem 3px;
+  margin: 0px -1rem -3px;
 }
 
 .header {
@@ -83,10 +80,10 @@ img {
 }
 
 .nav__links li {
-  padding: 0px 2rem;
-  margin: 0px 0.2rem;
+  padding: 0px 1rem;
+  margin: 0px 0.3rem;
   background: var(--primary-light);
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: var(--copy-light);
   transition: ease-out 1s;
 }
