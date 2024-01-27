@@ -1,5 +1,6 @@
 /** @format */
 
+// src/App.js
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
@@ -18,7 +19,7 @@ function App() {
     width: "100%",
     height: "100vh",
     zIndex: "2",
-    background: ""
+    background: "",
   };
 
   const [loading, setLoading] = useState(true);
@@ -41,21 +42,19 @@ function App() {
     <Router>
       <div className='App'>
         {loading ? (
-          <ClimbingBoxLoader
-            cssOverride={override}
-            color='#a7763e'
-            size={30}
-          />
+          <ClimbingBoxLoader cssOverride={override} color='#a7763e' size={30} />
         ) : (
-          <header>
-            <Header />
-            <Routes>
-              <Route path='/news' element={<News />} />
-              <Route path='/verification' element={<Verification />} />
-              <Route path='/projects' element={<Projects />} />
-              <Route path='/contact' element={<Contact />} />
-            </Routes>
-          </header>
+          <>
+            <header>
+              <Header />
+              <Routes>
+                <Route path='/news' element={<News />} />
+                <Route path='/verification' element={<Verification />} />
+                <Route path='/projects' element={<Projects />} />
+                <Route path='/contact' element={<Contact />} />
+              </Routes>
+            </header>
+          </>
         )}
       </div>
     </Router>

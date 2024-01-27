@@ -38,9 +38,11 @@
   --dark-violet: #5146e1;
   --black: #21232a;
 }
-
+.darkMode {
+  background-color: #333333;
+  color: #ffffff;
+}
 img {
-
   padding: 0px 1rem 3px;
   margin: 0px -1rem -3px;
 }
@@ -82,16 +84,16 @@ img {
 .nav__links li {
   padding: 0px 1rem;
   margin: 0px 0.3rem;
-  background: var(--primary-light);
   border-radius: 10px;
-  box-shadow: var(--copy-light);
+  background: linear-gradient(225deg, #cf5d5f, #ae4e50);
+  box-shadow: -6px 6px 12px #a44a4c, 6px -6px 12px #de6466;
   transition: ease-out 1s;
 }
 
 .nav__links li:hover {
   transition: ease-out, transform 1s;
   background: var(--primary-dark);
-  transition: cubic-bezier(0.075, 1, 0.165, 1)
+  transition: cubic-bezier(0.075, 1, 0.165, 1);
 }
 
 .nav__links li a {
