@@ -9,8 +9,12 @@ function Form() {
     <div className='form-container'>
       <form className='form'>
         <div className='form-group'>
-          <label htmlFor='email'>Discord Username & Discord ID (Developer Mode needed)</label>
-          <input type='text' id='email' name='email' required='' />
+          <label htmlFor='user'>Discord Username </label>
+          <input type='text' id='user' name='user' required='' />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='userId'>Discord Username </label>
+          <input type='text' id='userId' name='userId' required='' />
         </div>
         <div className='form-group'>
           <label htmlFor='textarea'>How Can We Help You?</label>
@@ -21,7 +25,7 @@ function Form() {
             cols='50'
             required=''></textarea>
         </div>
-        <button  className='form-submit-btn' type='submit'>
+        <button className='form-submit-btn' type='submit'>
           Submit
         </button>
       </form>
