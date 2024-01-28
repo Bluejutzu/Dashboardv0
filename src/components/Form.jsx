@@ -13,8 +13,8 @@ function Form() {
           <input type='text' id='user' name='user' required='' />
         </div>
         <div className='form-group'>
-          <label htmlFor='userId'>Discord Username </label>
-          <input type='text' id='userId' name='userId' required='' />
+          <label htmlFor='userId'>Discord User ID </label>
+          <input type='number' id='userId' name='userId' required='' />
         </div>
         <div className='form-group'>
           <label htmlFor='textarea'>How Can We Help You?</label>

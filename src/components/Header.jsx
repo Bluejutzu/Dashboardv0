@@ -26,7 +26,7 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href='./verification'>
+            <a href='/verification'>
               <img className={styles.icon_check} src={user_icon} alt='' />
             </a>
           </li>
